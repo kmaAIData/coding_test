@@ -9,16 +9,17 @@ Original file is located at
 
 def solution(scoville, K):
     count=0
-    for i in range(len(scoville)-1):
+    t=len(scoville)
+    for i in range(t):
         scoville=sorted(scoville)
         if scoville[0]<K:
-            if i == (len(scoville)-2):
-                count=-1
+            if i == (t-1):
+                count = -1
             else:
                 scoville.append(scoville[0]+scoville[1]*2)
                 del scoville[0:2]
-                count+=1
-        else: 
+                count += 1
+        else:
             break
     answer = count
     return answer
