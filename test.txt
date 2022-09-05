@@ -1,0 +1,9 @@
+def solution(scoville, K):
+    min(scoville) = minimum
+    scoville.remove(minimum)
+    
+    min(scoville) = minimum2
+    
+    answer = 0
+    if minimum + minimum2 * 2 >= K:
+        return answer
